@@ -6,6 +6,8 @@
 package javafxapplication5;
 
 import java.net.URL;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -22,9 +24,9 @@ public class FXMLDocumentController implements Initializable {
     private Label label;
     
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private void handleButtonAction(ActionEvent event) throws SQLException {
+        ConexaoMySql con = new ConexaoMySql();
+        Statement st = con.conexao.createStatement();
     }
     
     @Override
