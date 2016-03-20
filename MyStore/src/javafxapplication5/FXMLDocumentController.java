@@ -56,10 +56,14 @@ public class FXMLDocumentController implements Initializable {
     public String np, frn, cat, barcode;
     public int  qntd;
     public float preço;
+    
+   
         
     @FXML
     private void handleButtonAction(ActionEvent event) throws SQLException {
         
+        
+                
     /*   ConexaoMySql con = new ConexaoMySql();
         
        
@@ -85,20 +89,14 @@ public class FXMLDocumentController implements Initializable {
     }    
     
     public void execTerminada() {
-       /* Alert alert = new Alert(AlertType.INFORMATION);
-        alert.setTitle("Execução Dialog");
-        alert.setHeaderText("Look, an Information Dialog");
-        alert.setContentText("Nós inserimos" + var1 + var2 + var3);
-
-        alert.showAndWait();*/
-    
-      
-    
+       
+           
+          
     }
     
     private void tetse(ActionEvent event) {
     
-        quantidade.setText("");
+       
     
     }
     

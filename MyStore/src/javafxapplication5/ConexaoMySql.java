@@ -21,7 +21,7 @@ import java.sql.Statement;
  */
 public class ConexaoMySql {
     
-    String serverName = "54.232.199.237:3306";
+    String serverName = "";
     String mydatabase = "sys";
     String url = "jdbc:mysql://" + serverName + "/" + mydatabase;
     String username = "admin";

@@ -16,12 +16,15 @@ public class NumberTextField extends TextField {
     public NumberTextField() {
         this.setPromptText("enter only numbers");
         
+        
     }
     
     @Override
     public void replaceText(int i, int il, String string) {
         if(string.matches("[0-9]") || string.isEmpty()) {
             super.replaceText(il, il, string);
+            
+            
         }
     }
     @Override 
@@ -33,4 +36,5 @@ public class NumberTextField extends TextField {
     public void deleteNextChar(boolean b) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+   
 }
