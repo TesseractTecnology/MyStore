@@ -12,6 +12,7 @@ import java.sql.ResultSet;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
+import static java.util.EnumSet.range;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -19,9 +20,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafxapplication5.custom.NumberTextField;
 
 /**
  *
@@ -35,10 +38,12 @@ public class FXMLDocumentController implements Initializable {
     public TextField dataEnt;
     public TextField fornecedor;
     public TextField codBar;
-    public TextField quantidade;
+    public NumberTextField quantidade;
     public TextField dataFab;
     public TextField dataVal;
     public TextField valor;
+    
+    public ChoiceBox categoria;
     
     @FXML
     public TextArea desc;
@@ -55,9 +60,9 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void handleButtonAction(ActionEvent event) throws SQLException {
         
-        ConexaoMySql con = new ConexaoMySql();
+    /*   ConexaoMySql con = new ConexaoMySql();
         
-        
+       
         
         np = nomeProduto.getText();
         frn = fornecedor.getText();
@@ -87,6 +92,13 @@ public class FXMLDocumentController implements Initializable {
 
         alert.showAndWait();*/
     
+      
+    
+    }
+    
+    private void tetse(ActionEvent event) {
+    
+        quantidade.setText("");
     
     }
     
