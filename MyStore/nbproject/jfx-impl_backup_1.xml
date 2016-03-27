@@ -3678,6 +3678,10 @@
             <jvmarg line="${endorsed.classpath.cmd.line.arg}"/>
             <jvmarg line="${debug-args-line}"/>
             <jvmarg value="-Xrunjdwp:transport=${debug-transport},address=${jpda.address}"/>
+<<<<<<< HEAD
+=======
+            <jvmarg value="-Dglass.disableGrab=true"/>
+>>>>>>> c381bd261d4b25b940d075da714b7229ab39e68e
             <jvmarg value="-Dfile.encoding=${runtime.encoding}"/>
             <redirector errorencoding="${runtime.encoding}" inputencoding="${runtime.encoding}" outputencoding="${runtime.encoding}"/>
             <jvmarg line="${run.jvmargs}"/>
@@ -3816,7 +3820,11 @@
     <target name="-debug-javaws-debuggee" depends="-init-debug-args">
         <echo message="Executing ${jfx.deployment.jnlp} in debug mode using ${active.webstart.executable}"/>
         <exec executable="${active.webstart.executable}">
+<<<<<<< HEAD
             <env key="JAVAWS_VM_ARGS" value="${debug-args-line} -Xrunjdwp:transport=${debug-transport},address=${jpda.address}"/>
+=======
+            <env key="JAVAWS_VM_ARGS" value="${debug-args-line} -Xrunjdwp:transport=${debug-transport},address=${jpda.address} -Dglass.disableGrab=true"/>
+>>>>>>> c381bd261d4b25b940d075da714b7229ab39e68e
             <arg value="-wait"/>
             <arg file="${jfx.deployment.jnlp}"/>
         </exec>

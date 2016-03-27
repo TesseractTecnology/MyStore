@@ -38,6 +38,7 @@ public class FXMLDocumentController implements Initializable {
     public TextField dataEnt;
     public TextField fornecedor;
     public TextField codBar;
+    @FXML
     public NumberTextField quantidade;
     public TextField dataFab;
     public TextField dataVal;
@@ -64,6 +65,34 @@ public class FXMLDocumentController implements Initializable {
         
         
                 
+        /*   ConexaoMySql con = new ConexaoMySql();
+        np = nomeProduto.getText();
+        frn = fornecedor.getText();
+        cat = "Lacticinios";
+        barcode = codBar.getText();
+        Statement st = con.conexao.createStatement();
+        /* String sql = ("INSERT INTO usuarios (USUARIOS,NOME,SENHA) VALUES" +  "(" + "'" + var1 + "'," + "'" + var2 + "'," + "'" + var3 + "')");
+        st.execute(sql);
+        execTerminada(); */
+        /**
+         * I annotated your custom NumberTextField with @FXML
+         * and also give it an id in the fxml file, which needs to
+         * be the same "name" you have choosen as member name for this 
+         * NumberTextField within your FX Controller.
+         */
+        // try to get the Text
+        String text = quantidade.getText();
+        // check if the input is not null or empty
+        if(text != null && !text.trim().isEmpty()) {
+            // try to get a Number
+            try {
+                int numberValue = Integer.parseInt(text);
+                // here goes your logic
+                System.out.println("You have entered following Number: " + numberValue);
+            } catch (NumberFormatException ex) {
+                System.err.println("Something went wrong. " + text + " could not be converted as a number.");
+            }
+        }
     /*   ConexaoMySql con = new ConexaoMySql();
         
        

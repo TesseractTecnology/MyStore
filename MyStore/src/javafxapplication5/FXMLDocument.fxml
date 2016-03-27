@@ -64,7 +64,7 @@
       </Label>
       <TextField layoutX="185.0" layoutY="276.0" prefHeight="25.0" prefWidth="452.0" promptText="000000000000" />
       <TextField layoutX="185.0" layoutY="362.0" prefHeight="25.0" prefWidth="167.0" promptText="Insira a data " />
-      <NumberTextField layoutX="185.0" layoutY="319.0" prefHeight="25.0" prefWidth="167.0" promptText="Quantidade" text=""/>
+      <NumberTextField fx:id="quantidade"  layoutX="185.0" layoutY="319.0" prefHeight="25.0" prefWidth="167.0" promptText="Quantidade" text=""/>
       <TextField layoutX="478.0" layoutY="319.0" prefHeight="25.0" prefWidth="159.0" promptText="R$" />
       <TextField layoutX="479.0" layoutY="186.0" prefHeight="25.0" prefWidth="159.0" promptText="Insira a data " />
       <TextField layoutX="478.0" layoutY="362.0" prefHeight="25.0" prefWidth="159.0" promptText="Insira a data " />
