@@ -93,6 +93,22 @@ public class FXMLDocumentController implements Initializable {
                 System.err.println("Something went wrong. " + text + " could not be converted as a number.");
             }
         }
+    /*   ConexaoMySql con = new ConexaoMySql();
+        
+       
+        
+        np = nomeProduto.getText();
+        frn = fornecedor.getText();
+        cat = "Lacticinios";
+        
+        barcode = codBar.getText();
+        
+        
+        Statement st = con.conexao.createStatement();
+       /* String sql = ("INSERT INTO usuarios (USUARIOS,NOME,SENHA) VALUES" +  "(" + "'" + var1 + "'," + "'" + var2 + "'," + "'" + var3 + "')");
+        st.execute(sql);
+        execTerminada(); */
+                
         
     }
     
